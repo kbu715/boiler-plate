@@ -65,3 +65,42 @@ src 폴더만 관리해준다. public은 제외.
 
 # npm install axios --save
 
+# 두개의 다른 포트(client localhost:3000, server localhost:5000)를 가지고 있으면 아무 설정없이 request를 보낼 수 없다.
+
+why? Cors정책때문에 (보안을 위해서!!!)
+
+how to solve? 여러가지 방법이 있다. 그중에 우리는 Proxy 사용하는 방법으로 해결!
+
+# npm install http-proxy-middleware --save
+
+# src/setupProxy.js
+
+# proxy server
+
+1. 방화벽 기능
+2. 웹필터 기능
+3. 캐쉬 데이터, 공유 데이터 제공 기능
+
+# proxy server 사용 이유!
+1.회사에서 직원들이나 집안에서 아이들 인터넷 사용제어
+2.캐쉬를 이용해 더 빠른 인터넷 이용 제공
+3.더 나은 보안 제공
+4.이용 제한된 사이트 접근 가능
+
+# Concurrently 프론트와 백을 한번에 키자
+
+# npm install concurrently --save
+
+# CSS FRAMEWORK - Ant Design 을 써보자 npm install antd --save
+사이즈가 큰 대신 스타일이 굉장히 깔끔하다. 쓰기가 굉장히 편하다
+
+# Redux is a predictable state container for Javascript apps. 상태 관리 라이브러리
+
+# Props vs State
+
+State
+1.parent component에서 child component로 data를 보내는게 아닌 그 component 안에서 데이터를 전달하려면 state로
+2.State is mutable
+3.State가 변하면 re-render 된다.
+
+# redux는 state을 관리하는것
