@@ -82,16 +82,15 @@ how to solve? 여러가지 방법이 있다. 그중에 우리는 Proxy 사용하
 3. 캐쉬 데이터, 공유 데이터 제공 기능
 
 # proxy server 사용 이유!
-1.회사에서 직원들이나 집안에서 아이들 인터넷 사용제어
-2.캐쉬를 이용해 더 빠른 인터넷 이용 제공
-3.더 나은 보안 제공
-4.이용 제한된 사이트 접근 가능
+
+1.회사에서 직원들이나 집안에서 아이들 인터넷 사용제어 2.캐쉬를 이용해 더 빠른 인터넷 이용 제공 3.더 나은 보안 제공 4.이용 제한된 사이트 접근 가능
 
 # Concurrently 프론트와 백을 한번에 키자
 
 # npm install concurrently --save
 
 # CSS FRAMEWORK - Ant Design 을 써보자 npm install antd --save
+
 사이즈가 큰 대신 스타일이 굉장히 깔끔하다. 쓰기가 굉장히 편하다
 
 # Redux is a predictable state container for Javascript apps. 상태 관리 라이브러리
@@ -104,3 +103,15 @@ State
 3.State가 변하면 re-render 된다.
 
 # redux는 state을 관리하는것
+
+# 다운받아야 할 dependency들
+
+1.redux
+2.react-redux
+3.redux-promise
+4.redux-thunk
+
+# npm install redux react-redux redux-promise redux-thunk --save
+
+redux-promise, redux-thunk를 미들웨어로 받은이유는 dispatch한테 promise, function이 왔을때 어떻게
+대처 해야하는지 알려준다.
