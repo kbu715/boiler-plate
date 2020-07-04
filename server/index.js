@@ -24,7 +24,7 @@ mongoose
   .then(() => console.log("MongoDB Connected..."))
   .catch(err => console.log(err));
 
-app.get("/", (req, res) => res.send("Hello worlsdfsdfsdf"));
+
 
 app.post("/api/users/register", (req, res) => {
   //회원 가입 할때  필요한 정보들을  client에서 가져오면
@@ -75,6 +75,8 @@ app.post("/api/users/login", (req, res) => {
   });
 });
 
+//role 1 어드민       role 2 특정 부서 어드민
+//role 0 -> 일반유저   role 0이 아니면 관리자
 app.get("/api/users/auth", auth, (req, res) => {
   // 엔드포인트에서 request를 받은다음에 콜백함수를 실행전에 중간에서 해준다.
 
@@ -102,8 +104,6 @@ app.get("/api/users/logout", auth, (req, res) => {
   });
 });
 
-//test
-  app.get('/api/hello', (req, res)=>{res.send('안녕안녕')})
 
 
 const port = 4000;

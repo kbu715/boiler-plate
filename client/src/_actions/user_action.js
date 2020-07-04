@@ -30,3 +30,20 @@ export function registerUser(dataToSubmit) {
     payload: request,
   };
 }
+
+
+
+
+export function auth() {
+
+
+  //request 받아온 데이터
+  const request = axios
+    .get("/api/users/auth")
+    .then(response => response.data);
+
+  return {
+    type: AUTH_USER,
+    payload: request,
+  };
+}
